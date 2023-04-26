@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Let's Convert the Temperature</title>
+</head>
+<body>
+    <div class="back">
+    <h1 style="text-align: center; font-family: 'Bree Serif', serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Rubik', sans-serif;">Welcome To Temperature Converter</h1>
+
+    <h2 style="font-family: 'Libre Baskerville', serif;">Do you Know? What is Temperature?</h2>
+    <p style="font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    ">Temperature is the measure of hotness or coldness expressed in terms of any of several scales, including Fahrenheit and Celsius. Temperature indicates the direction in which heat energy will spontaneously flow—i.e., from a hotter body (one at a higher temperature) to a colder body (one at a lower temperature).</p>
+    <p style="font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Libre Baskerville', serif;"><u>Convert Celsius to Fahrenheit using the °F = (°C x 1.8) + 32</u>
+        </p>
+    <p style="font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Libre Baskerville', serif;"><u>Convert Fahrenheit to Celsius with the °C = (°F - 32) x 
+        5/
+        9</u>
+        </p>
+    
+
+    <h2 style="text-align: center; font-family: 'Bree Serif', serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Rubik', sans-serif;">Let's Convert the Temperature</h2>
+   </div>
+
+    <div class="box">
+        <form id="calcuTemp" onsubmit="convertTemp(); return false">
+        <label for="temp">Enter Your Temperature value to convert</label>
+        <br>
+        <input type="number" name="temp" id="temp" value="0">
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">&#176;Celsius</option>
+            <option value="fah">&#176;Fahrenheit</option>
+        </select>
+        
+        <button name="temp" type="submit" value="number" style="padding: 10px 25px;">convert</button>
+        <br>
+        <span id="result"></span>
+        </form>
+    </div>
+
+
+    <footer>
+        <p style="color: black; font-size: 150%;">Thanks for Coming<br>
+        <p style="color: black; font-size: 120%;">Visit Again</p>
+        
+      </footer>
+    <script src="sc.js"></script>
+</body>
+</html>
